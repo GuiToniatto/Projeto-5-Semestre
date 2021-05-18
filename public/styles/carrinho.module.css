@@ -1,0 +1,73 @@
+.containerCart{
+    width: 100%;
+    height: 100vh;
+
+    margin-bottom: 60px;
+}
+
+.containerCart .rowContainerCart{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    height: 200px;
+    padding-left: 50px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.containerCart .rowContainerCart .cardCart{
+    width: 310px;
+    height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,0,0.8);
+
+    border-radius: 12px;
+
+    margin-right: 60px;
+}
+
+.containerCart .rowContainerCart .cardCart .img-style-cart{
+    width: 300px;
+    height: 150px;
+    
+}
+
+.containerCart .columnCart{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerCart .columnCart h3{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.containerCart .columnCart span{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.containerCart .columnCart input{
+    width: 50px;
+}
+
+.containerTotal{
+    height: 100px;
+    width: 100%;
+
+    margin-top: 150px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+

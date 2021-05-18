@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:Helvetica;
+    color: #323232;
+    border: none;
+}
+
+:root{
+    --font-primary: "Baloo Da 2", sans-serif;
+}
+
+body{
+    background-color: #41434b;
+}
+
+.container{
+    background-color: #24252A;
+}
+
+li, a, button{
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.logo{
+    cursor: pointer;  
+    margin-right: auto;
+    left: 2rem;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #ffff00;
+}
+
+.carrinho{
+    color: white;
+}
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(255,255,0,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+
+button:hover{
+    background-color: rgba(255,255,0,0.8);
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#forgot-pass, #register{
+    color: #24252A;
+}
+
+#login-container{
+    background-color: white;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus{
+    border-bottom: 2px solid #ffff00;
+}
+
+#forgot-pass{
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color:  #41434b;
+    transition: .5s;
+}
+
+#social-container, #social-container p{
+    margin-bottom: 20px;
+}
+
+#social-container i{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.fa-facebook{
+    font-size: 35px;
+}
+
+.fa-linkedin{
+    font-size: 35px;
+}
+
+#register-container p{
+    margin-bottom: 10px;
+}

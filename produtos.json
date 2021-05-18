@@ -1,0 +1,47 @@
+[
+    {
+        "nome": "AWP RedLine FT",
+        "preco": "R$ 140,00",
+        "img": "./img/produtos/RedLine FT.png"
+    },
+    {
+        "nome": "AK47 RedLine MW",
+        "preco": "R$ 89,00",
+        "img": "./img/produtos/RedLine MW.png"
+    },
+    {
+        "nome": "M4A4 Cyber Security FT",
+        "preco": "R$ 64,00",
+        "img": "./img/produtos/Cyber Security.png"
+    },
+    {
+        "nome": "AWP Worm God FT",
+        "preco": "R$ 10,00",
+        "img": "./img/produtos/Worm God.png"
+    },
+    {
+        "nome": "M4A4 Neo Noir BS",
+        "preco": "R$ 70,00",
+        "img": "./img/produtos/Neo-Noir.png"
+    },
+    {
+        "nome": "AK47 Phantom Disruptor MW",
+        "preco": "R$ 40,00",
+        "img": "./img/produtos/Phantom Disruptor.png"
+    },
+    {
+        "nome": "AWP Mortis FT",
+        "preco": "R$ 20,00",
+        "img": "./img/produtos/Mortis.png"
+    },
+    {
+        "nome": "M4A4 The Emperor FT",
+        "preco": "R$ 100,00",
+        "img": "./img/produtos/The Emperor.png"
+    },
+    {
+        "nome": "AK47 Neon Rider FT",
+        "preco": "R$ 180,00",
+        "img": "./img/produtos/Neon Rider.png"
+    }
+]
