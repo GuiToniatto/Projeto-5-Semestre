@@ -2,42 +2,53 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RegisterRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-    /**
-     * Criação de usuário no site
-     *
-     * @param Request $request Requisição vinda do html
-     *
-     * @return void
-     */
-    public function createUser(Request $request)
+    public function loginView()
+    {
+        return view('login');
+    }
+
+    public function login(Request $request)
+    {
+        $data = $request->only(['email', 'password']);
+        $user = User::where('email', $data['email'])->first();
+
+        if (!isset($user)) {
+            return redirect()->route('login')->with('email_error', true);
+        }
+
+        if (Auth::attempt($data)) {
+            return redirect()->route('home');
+        } else {
+            return redirect()->route('login')->with('pass_error', true);
+        }
+    }
+
+    public function register()
+    {
+        return view('register');
+    }
+
+    public function guardar(RegisterRequest $request)
     {
         $data = $request->all();
+        $data['password'] = bcrypt($data['password']);
 
         User::create($data);
 
-        return view('index', with('create', true));
+        return redirect()->route('login')->with('create', true);
     }
 
-    /**
-     * Login no sistema
-     *
-     * @param Request $request Requisição vinda do html
-     *
-     * @return void
-     */
-    public function login(Request $request)
+    public function logout()
     {
-        $user = User::where('email', $request->email)->first();
+        Auth::logout();
 
-        if ($request->password == $user->password) {
-            return view('index');
-        } else {
-            return redirect()->route('login');
-        }
+        return redirect()->route('login');
     }
 }

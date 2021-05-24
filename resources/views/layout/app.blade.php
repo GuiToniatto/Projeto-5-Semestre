@@ -33,7 +33,8 @@
                     </ul>
                 </nav>
                 <a href="{{ route('carrinho') }}"><img class="carrinho" src="img/cart.png" width="50px" height="50px"></a>
-                <a class="cta" href="{{ route('login') }}"><button>Login</button></a>
+                <a class="cta" href="{{ route('loginView') }}"><button>Login</button></a>
+                <a class="cta" href="{{ route('logout') }}"><button>Logout</button></a>
             </header>
 
             <div class="sidebar">
