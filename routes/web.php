@@ -38,6 +38,18 @@ Route::group(['middleware' => ['auth']], function () {
         return view('carrinho');
     })->name('carrinho');
 
+    Route::get('/faleconosco', function () {
+        return view('faleconosco');
+    })->name('faleconosco');
+
+    Route::get('/quemsomos', function () {
+        return view('quemsomos');
+    })->name('quemsomos');
+
+    Route::get('/servicos', function () {
+        return view('servicos');
+    })->name('servicos');
+
     Route::get('/escopetas', [EscopetaController::class, 'index'])->name('escopeta');
     Route::get('/facas', [FacaController::class, 'index'])->name('facas');
     Route::get('/luvas', [LuvaController::class, 'index'])->name('luvas');

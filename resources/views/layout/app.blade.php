@@ -27,9 +27,9 @@
                 <a class="logo" href="{{ route('home') }}"><img class="logo" src="icon/Logotipo.png" alt="logo"></a>
                 <nav>
                     <ul class="nav_links">
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Quem Somos</a></li>
-                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="{{ route('servicos') }}">Serviços</a></li>
+                        <li><a href="{{ route('quemsomos') }}">Quem Somos</a></li>
+                        <li><a href="{{ route('faleconosco') }}">Fale Conosco</a></li>
                     </ul>
                 </nav>
                 <a href="{{ route('carrinho') }}"><img class="carrinho" src="img/cart.png" width="50px" height="50px"></a>
